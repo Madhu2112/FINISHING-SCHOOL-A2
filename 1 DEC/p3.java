@@ -57,7 +57,6 @@ import java.util.*;
 class p3 {
     public static boolean isTrue(String str) {
         int count = 0;
-        int k = 0;
         ArrayList<Integer> arr = new ArrayList<Integer>();
         for (int i = 0; i < str.length(); i++) {
             for (int j = 0; j < str.length(); j++) {

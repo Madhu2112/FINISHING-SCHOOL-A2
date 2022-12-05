@@ -2,7 +2,7 @@
 //leetcode 647
 import java.util.*;
 
-class sol {
+class p3 {
     public static int countsub(String s) {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {

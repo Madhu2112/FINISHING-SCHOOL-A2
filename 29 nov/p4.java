@@ -24,5 +24,6 @@ class p4 {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         System.out.println(pos(s));
+        sc.close();
     }
 }
