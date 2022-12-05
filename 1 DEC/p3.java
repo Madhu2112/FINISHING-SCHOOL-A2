@@ -1,4 +1,5 @@
-import java.util.*;
+
+/*import java.util.*;
 
 public class p3 {
 
@@ -49,5 +50,44 @@ public class p3 {
                 System.out.println("false");
         }
         input.close();
+    }
+}*/
+import java.util.*;
+
+class p3 {
+    public static boolean isTrue(String str) {
+        int count = 0;
+        int k = 0;
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = 0; j < str.length(); j++) {
+                if (str.charAt(i) == str.charAt(j))
+                    count++;
+            }
+            arr.add(count);
+            count = 0;
+        }
+        for (int i = 0; i < arr.size(); i++) {
+            if (arr.get(i) == 1)
+                arr.remove(i);
+        }
+        int min = arr.get(0);
+        int max = arr.get(0);
+        for (int i = 0; i < arr.size(); i++) {
+            if (arr.get(i) < min)
+                min = arr.get(i);
+            if (arr.get(i) > max)
+                max = arr.get(i);
+        }
+        if (min == max || min == max - 1)
+            return true;
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        System.out.println(isTrue(str));
+        sc.close();
     }
 }
