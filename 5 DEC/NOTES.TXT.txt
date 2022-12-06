@@ -1,0 +1,26 @@
+LOCAL VARIABLES
+variable scope
+static variable
+--------------------------
+structure:-
+package dec
+import stat
+class dec
+field dec
+method dec
+--------------------------
+destroyig objects
+garbage collection
+finalize
+no memory leaks
+--------------------------
+benefits of java
+write once run everywhere--platform independence of java
+--------------------------------------
+chapter 1 in osa is finished
+------------
+e1->obj
+e2->obj
+e3->e1
+e1=null
+string which is not intialosed is also eligible for garbage collection
